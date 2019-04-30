@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         EZ Paywall RM
 // @namespace    https://github.com/tygamer1to7/EZ-Paywall-RM/
-// @version      0.5
+// @version      0.6
 // @downloadURL  https://raw.githack.com/tygamer1to7/EZ-Paywall-RM/master/EZ Paywall RM.user.js
-// @description  YEET!
+// @description  A useful tool.
 // @author       tygamer1to7
 // @match        https://cooking.nytimes.com/*
 // @match        https://washingtonpost.com/*
