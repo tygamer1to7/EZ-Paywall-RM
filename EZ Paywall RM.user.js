@@ -1,5 +1,5 @@
 // ==UserScript==
-// @run-at       default
+// @run-at       document-start
 // @name         EZ Paywall RM
 // @namespace    https://github.com/tygamer1to7/EZ-Paywall-RM/
 // @version      0.7
