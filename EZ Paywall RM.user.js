@@ -1,5 +1,4 @@
 // ==UserScript==
-// @run-at       document-start
 // @name         EZ Paywall RM
 // @namespace    https://github.com/tygamer1to7/EZ-Paywall-RM/
 // @version      0.7
@@ -9,7 +8,6 @@
 // @match        https://cooking.nytimes.com/*
 // @match        https://washingtonpost.com/*
 // @match        https://nytimes.com/*
-// @match        https://www.cooksillustrated.com/*
 // @grant        none
 // @require http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // ==/UserScript==
@@ -17,6 +15,8 @@
 (function() {
     'use strict';
     $('script').remove();
+    $("head").children().appendTo("body");
+    $("head").remove();
     if (window.location.hostname == "cooking.nytimes.com")
     {
         $(".nytc---modal-window---windowContainer").remove();
@@ -33,12 +33,5 @@
         }
         checkFlag();
     }
-    if (window.location.hostname == "www.cooksillustrated.com") {
-        $(".paywall__overlay").remove();
-        $(".blurred").removeClass("blurred");
-        $("div.recipe__placeholder").removeAttr("style");
-}
-    $("head").children().appendTo("body");
-    $("head").remove();
-    $('noscript').remove();
+
 })();
